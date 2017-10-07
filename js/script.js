@@ -347,7 +347,7 @@ codeAddress = function () {
         position: georesult,
         draggable: true,
         animation:google.maps.Animation.DROP,
-        icon: 'img/marker.png'
+        icon: 'img/marker2.png'
       });
 
       updateMarkerPosition(georesult);
