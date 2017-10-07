@@ -316,7 +316,7 @@ function initialize() {
 
   var input = document.getElementById('NameSearch');
   var searchBox = new google.maps.places.SearchBox(input);
-  directionsDisplay = new google.maps.DirectionsRenderer();
+  directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true});
 
   directionsDisplay.setMap(map);
   google.maps.event.addDomListener(document.getElementById('directions'), 'click', calcRoute);
