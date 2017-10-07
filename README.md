@@ -12,5 +12,8 @@ Like you have an Email ID, for addresses you have Addy! An app that changes the 
   <li>Google Maps Geocoder API Used</li>
 </ul>
 
+## Gitter channel link
+https://gitter.im/Addy-Smart-Addresses 
 ## Contribution Guidelines
 https://github.com/Addy-Smart-Addresses/Addy-Android/wiki/Contribution-Guidelines
+
