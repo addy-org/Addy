@@ -12,6 +12,7 @@
 
  
 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link type="text/css" href="./css/style.css" rel="stylesheet">
 </head>
@@ -21,11 +22,19 @@
 
   <img src="img/logo.png" class="img-responsive logo" onclick="getLocation()"></img>
   <div class="sidebar">
-    <input class="form-control input-md" id="NameSearch" type="textbox" value="" onkeydown="if (event.keyCode == 13){codeAddress()}"
-      placeholder="Search by Name"></input>
+    <div class="input-group">
+      <input class="form-control" id="NameSearch" type="textbox" value="" onkeydown="if (event.keyCode == 13){codeAddress()}"
+        placeholder="Search by Name">
+      <span class="input-group-addon" onclick="codeAddress()"><i class="fa fa-search"></i></span>
+    </div>
+    
       <center class="text-muted my-2">OR</center>
-      <input class="form-control input-md" id="BackCode" type="textbox" placeholder="Search By Addy" onclick="document.getElementById('BackCode').value=''"
-        onkeydown="if (event.keyCode == 13){codeback()}"></input>
+      <div class="input-group">
+        <input class="form-control input-md" id="BackCode" type="textbox" placeholder="Search By Addy" onclick="document.getElementById('BackCode').value=''"
+          onkeydown="if (event.keyCode == 13){codeback()}"></input>
+        <span class="input-group-addon" onclick="codeback()"><i class="fa fa-search"></i></span>
+      </div>
+     
       <hr>
 
       <div class="info">
