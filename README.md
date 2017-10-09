@@ -13,6 +13,9 @@ Addy is a web app that enhances the addressing system of the world. Instead of r
   <li>Google Maps Geocoder API Used</li>
 </ul>
 
+## Gitter channel link
+https://gitter.im/Addy-Smart-Addresses 
+
 ## Contribution Guidelines
 https://github.com/Addy-Smart-Addresses/Addy-Android/wiki/Contribution-Guidelines
 
