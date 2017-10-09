@@ -18,15 +18,17 @@
 
 <body onload="codeAddress()">
   <div id="maparea" align="center"></div>
-  <div id="Search" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" >
+
+  <nav class="navbar">
+<div id="Search" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" >
     <div id="SearchBox" class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
       <div id="SearchBar" align="center"  class="col-md-11 col-sm-10 col-xs-10 col-lg-11">
         <input  class="form-control input-md" id="NameSearch" type="textbox" value="" onkeydown = "if (event.keyCode == 13){codeAddress()}" placeholder="Search by Name"></input>
       </div>
       <div id="SearchButton1" align="center" class="col-md-1 col-sm-2 col-xs-2 col-lg-1 glyphicon glyphicon-search" onclick="codeAddress()"></div>
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-3 col-lg-4" align="center" onclick="getLocation()">
-      <img src="img/logo.png" class="img-responsive" onclick="getLocation()"></img>
+    <div class="col-md-4 col-sm-4 col-xs-3 col-lg-4" id="logo" align="center" onclick="getLocation()">
+      <img src="img/logo3.png" class="img-responsive" onclick="getLocation()"></img>
     </div>
     <div id="AddySearch" class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
       <div id="SearchBar" align="center"  class="col-md-11 col-sm-10 col-xs-10 col-lg-11">
@@ -35,8 +37,9 @@
       <div id="SearchButton2" align="center" class="col-md-1 col-sm-2 col-xs-2 col-lg-1 glyphicon glyphicon-search" onclick="codeback()"></div>
     </div>
   </div>
+  </nav>
 
-  <div id="infoPanel" align="center" class=".animated .bounceInUp col-md-6 col-sm-6 col-xs-6 col-lg-6">
+    <div id="infoPanel" align="center" class=".animated .bounceInUp col-md-6 col-sm-6 col-xs-6 col-lg-6">
     <div class="tabbable col-md-12 col-sm-12 col-xs-12 col-lg-12">
       <ul class="nav nav-tabs">
         <li class="active col-md-4 col-sm-4 col-xs-12 col-lg-4"><a href="#tab1" data-toggle="tab"><strong>Your Addy</strong></a></li>

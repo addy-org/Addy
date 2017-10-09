@@ -316,7 +316,7 @@ function initialize() {
 
   var input = document.getElementById('NameSearch');
   var searchBox = new google.maps.places.SearchBox(input);
-  directionsDisplay = new google.maps.DirectionsRenderer();
+  directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true});
 
   directionsDisplay.setMap(map);
   google.maps.event.addDomListener(document.getElementById('directions'), 'click', calcRoute);
@@ -347,7 +347,7 @@ codeAddress = function () {
         position: georesult,
         draggable: true,
         animation:google.maps.Animation.DROP,
-        icon: 'img/marker.png'
+        icon: 'img/marker2.png'
       });
 
       updateMarkerPosition(georesult);
