@@ -1,6 +1,6 @@
 **I'm submitting a ...**
-- [ ] bug report
-- [ ] feature request
+- [] bug report
+- [] feature request
 
 **Current behavior:**
 <!-- How the bug manifests. -->
