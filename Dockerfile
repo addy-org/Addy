@@ -1,6 +1,6 @@
-FROM python:3
+FROM node:8
 
 WORKDIR /usr/src
 COPY $PWD .
 
-CMD ["python", "-m", "http.server"]
+CMD ["python", "-m", "SimpleHTTPServer"]
