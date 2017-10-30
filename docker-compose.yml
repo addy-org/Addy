@@ -1,8 +1,19 @@
 version: '3'
 
 services:
-  addy:
+  addy-development:
     build: .
+    command: /bin/bash -l -c "python -m SimpleHTTPServer 8000"
     tty: true
     ports:
       - 8000:8000
+    volumes:
+      - $PWD:/usr/src
+  addy-production:
+    build: .
+    command: /bin/bash -l -c "gulp && cd build/ && python -m SimpleHTTPServer 8001"
+    tty: true
+    ports:
+      - 8001:8001
+    volumes:
+      - $PWD:/usr/src
