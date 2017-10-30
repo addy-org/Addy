@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  addy:
+    image: python:3
+    command: /bin/bash -l -c "cd /usr/src && python -m http.server"
+    tty: true
+    volumes:
+      - $PWD:/usr/src
+    ports:
+      - 8000:8000
