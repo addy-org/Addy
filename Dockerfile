@@ -1,6 +1,10 @@
-FROM node:8
+FROM node:latest
 
 WORKDIR /usr/src
-COPY $PWD .
 
-CMD ["python", "-m", "SimpleHTTPServer"]
+COPY package.json .
+
+RUN npm install gulp -g
+RUN npm install
+
+COPY . .
