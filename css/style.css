@@ -22,11 +22,11 @@ body {
 .logo {
     position: fixed;
     top: 20px;
-    left: 20px;
-}
+    right:20px;
+    }
 .sidebar{
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
     
     padding: 10px;
