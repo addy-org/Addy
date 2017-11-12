@@ -22,11 +22,6 @@ module.exports = {
         interlaced: true
       }
     },
-    ico: {
-      src: development + '/img/*.ico',
-      dest: production + '/img/',
-      options: {}
-    },
     html: {
       src: development + '/*.html',
       dest: production,
