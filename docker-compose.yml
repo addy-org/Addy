@@ -9,11 +9,10 @@ services:
       - 8000:8000
     volumes:
       - $PWD:/usr/src
+      - /usr/src/node_modules
   addy-production:
     build: .
     command: /bin/bash -l -c "gulp && cd build/ && python -m SimpleHTTPServer 8001"
     tty: true
     ports:
       - 8001:8001
-    volumes:
-      - $PWD:/usr/src
