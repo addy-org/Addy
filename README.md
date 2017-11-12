@@ -17,7 +17,7 @@ Addy is a web app that enhances the addressing system of the world. Instead of r
 https://gitter.im/Addy-Smart-Addresses
 
 ## Contribution Guidelines
-https://github.com/Addy-Smart-Addresses/Addy-Android/wiki/Contribution-Guidelines
+https://github.com/Addy-Smart-Addresses/Addy/wiki/Contribution-Guidelines
 
 ## Getting Started with Contributing:
 1. After forking the project, git clone this repository onto your local environment:
