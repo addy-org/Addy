@@ -8,7 +8,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - $PWD:/usr/src
+      - $PWD/src:/usr/src
       - /usr/src/node_modules
   addy-production:
     build: .
