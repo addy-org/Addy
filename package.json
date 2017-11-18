@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marceloabk/Addy.git"
+    "url": "git+https://github.com/Addy-Smart-Addresses/Addy.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marceloabk/Addy/issues"
+    "url": "https://github.com/Addy-Smart-Addresses/Addy/issues"
   },
-  "homepage": "https://github.com/marceloabk/Addy#readme",
+  "homepage": "https://github.com/Addy-Smart-Addresses/Addy#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.0",
