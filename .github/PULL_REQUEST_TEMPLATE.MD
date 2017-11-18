@@ -1,7 +1,7 @@
 #### Checklist
 
-- [] My branch is up-to-date with the Upstream `master` branch.
-- [] I have added necessary documentation (if appropriate)
+- [ ] My branch is up-to-date with the Upstream `master` branch.
+- [ ] I have added necessary documentation (if appropriate)
 
 
 **Changes proposed in this pull request**
