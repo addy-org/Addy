@@ -8,5 +8,4 @@ install:
   - npm install -g eslint
 
 script:
-  - npm test
-  - eslint /Addy
+  - eslint 
