@@ -7,8 +7,8 @@ var config = require('../../config').optimize.css;
  * Copy and minimize CSS files
  */
 gulp.task('optimize:css', function() {
-  return gulp.src(config.src)
-    .pipe(csso(config.options))
-    .pipe(gulp.dest(config.dest))
-    .pipe(size());
+	return gulp.src(config.src)
+		.pipe(csso(config.options))
+		.pipe(gulp.dest(config.dest))
+		.pipe(size());
 });

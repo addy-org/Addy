@@ -1,10 +1,12 @@
+sudo: required
+
 language: node_js
 node_js:
   - "0.10"
-before_script:
-  - npm install -g gulp
-  - npm install
+
+install:
+  - npm install -g eslint
 
 script:
-  - gulp build
-  - gulp style
+  - npm test
+  - eslint /Addy
