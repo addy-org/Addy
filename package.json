@@ -25,7 +25,8 @@
     "gulp-uglify": "^3.0.0",
     "require-dir": "^0.3.2"
   },
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint **/*.js",
 
+  "scripts": {
+ "lint": "./node_modules/.bin/eslint **/*.js",
+  }
 }
