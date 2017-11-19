@@ -1,6 +1,7 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "node": true
     },
 
     "rules": {
