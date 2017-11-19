@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint /Addy",
-    "lint": "eslint /Addy; exit 0"
+    "lint": "eslint /Addy; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
