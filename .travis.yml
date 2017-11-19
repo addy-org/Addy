@@ -8,4 +8,4 @@ install:
   - npm install -g eslint
 
 script:
-  - npm run eslint
+  - npm run lint
