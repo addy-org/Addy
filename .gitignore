@@ -67,3 +67,5 @@ $RECYCLE.BIN/
 node_modules/
 build/
 # End of https://www.gitignore.io/api/linux,macos,windows
+
+.idea/
