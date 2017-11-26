@@ -14,7 +14,7 @@ body {
 
 }
 .form-control{
-	background-color: rgba(221, 226, 227, 0.2);
+		background-color: rgba(221, 226, 227, 0.2);
 	border: solid 1px #E4E4E4;
 	padding: 10px;
 }
@@ -23,7 +23,7 @@ body {
 	position: fixed;
 	top: 20px;
 	right:30px;
-}
+	}
 .sidebar{
 	position: absolute;
 	left: 10px;
