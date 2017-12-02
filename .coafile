@@ -1,10 +1,10 @@
 [global]
 bears = coalaBear
-files += **.css, **.js, **.md
+files += **.css, **.js, **.md, **.html
 
 [linecount]
 bears = LineCountBear
-files += **.js, **.md
+files += **.js, **.md, **.html, **.css
 max_lines_per_file = 600
 
 [spacing]
