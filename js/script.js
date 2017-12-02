@@ -28,7 +28,7 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById("maparea"), mapOptions);
 
-  var input = document.getElementById('NameSearch');
+  var input = document.getElementById('name-search');
   var searchBox = new google.maps.places.SearchBox(input);
   directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true});
 
@@ -44,7 +44,7 @@ google.maps.event.addDomListener(window, "load", initialize);
 
 codeAddress = function () {
   initialize();
-  var address = document.getElementById('NameSearch').value;
+  var address = document.getElementById('name-search').value;
   if(address === '' )
 	address = 'New Delhi, Delhi, India';
 
@@ -155,10 +155,10 @@ function geocodePosition(pos) {
 }
 
 codeback = function() {
-  var backcode = document.getElementById('BackCode').value;
+  var backcode = document.getElementById('back-code').value;
   var backcode1 = backcode.substring(0,4);
   var backcode2 = backcode.substring(4,8);
-  document.getElementById('NameSearch').value = [(codebackconvert(backcode1)+74000)/10000,(codebackconvert(backcode2)+675000)/10000].join(', ');
+  document.getElementById('name-search').value = [(codebackconvert(backcode1)+74000)/10000,(codebackconvert(backcode2)+675000)/10000].join(', ');
   codeAddress();
 }
 
@@ -173,7 +173,7 @@ function getLocation() {
 function showPosition(position) {
   var lat = position.coords.latitude;
   var long = position.coords.longitude;
-  document.getElementById('NameSearch').value = [lat,long].join(', ');
+  document.getElementById('name-search').value = [lat,long].join(', ');
   codeAddress();
 }
 
@@ -203,3 +203,11 @@ function calcRoute() {
 	}
   });
 }
+
+document.getElementById('maparea').onload=codeAddress();
+document.getElementById('logo').onclick=getLocation();
+document.getElementById('name-search').onkeydown="if (event.keyCode == 13){codeAddress()}";
+document.getElementById('input-name').onclick=codeAddress();
+document.getElementById('back-code').onclick="document.getElementById('back-code').value=''";
+document.getElementById('back-code').onkeydown="if (event.keyCode == 13){codeback()}";
+document.getElementById('addy-input').onclick=codeback();
