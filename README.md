@@ -14,7 +14,7 @@ Addy is a web app that enhances the addressing system of the world. Instead of r
 </ul>
 
 ## Gitter channel link
-https://gitter.im/Addy-Smart-Addresses
+https://gitter.im/addy-org
 
 ## Contribution Guidelines
 https://github.com/addy-org/Addy/wiki/Contribution-Guidelines
